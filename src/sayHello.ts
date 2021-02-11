@@ -1,7 +1,5 @@
 export interface SayHello {
-  (event: string): void;
+  (event: string): string;
 }
 
-export const sayHello: SayHello = (name: string) => {
-  return `hello world: ${name}`;
-};
+export const sayHello: SayHello = (name: string) => `hello world: ${name}`;
